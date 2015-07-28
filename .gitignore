@@ -9,3 +9,7 @@ out/
 *.ipr
 *.iws
 *.ids
+
+# Gradle
+
+.gradle/
