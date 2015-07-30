@@ -1,5 +1,5 @@
 # Testing Java
 
-[![Build Status](https://travis-ci.org/raoufaghrout/bmf-java-testing.svg?branch=master)](https://travis-ci.org/raoufaghrout/bmf-java-testing)
+[![Build Status](https://travis-ci.org/raoufaghrout/java-testing.svg?branch=master)](https://travis-ci.org/raoufaghrout/java-testing)
 
 Testing patterns for Java with examples.
