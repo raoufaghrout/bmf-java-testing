@@ -1,6 +1,6 @@
-package io.ra.bfmtestingjava.builder;
+package io.ra.testingjava.builder;
 
-import io.ra.bfmtestingjava.Person;
+import io.ra.testingjava.Person;
 
 public class PersonBuilder {
 

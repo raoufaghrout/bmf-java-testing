@@ -1,4 +1,4 @@
-package io.ra.bfmtestingjava;
+package io.ra.testingjava;
 
 public class Person {
 

@@ -1,8 +1,8 @@
-package io.ra.bfmtestingjava;
+package io.ra.testingjava;
 
 import org.junit.Test;
 
-import static io.ra.bfmtestingjava.builder.PersonBuilder.*;
+import static io.ra.testingjava.builder.PersonBuilder.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
