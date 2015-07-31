@@ -5,9 +5,11 @@ import static org.apache.commons.lang3.builder.HashCodeBuilder.reflectionHashCod
 
 public class Person {
 
-    private final String firstName;
-    private final String surname;
-    private final int age;
+    private String firstName;
+    private String surname;
+    private int age;
+
+    public Person() {}
 
     public Person(String firstName, String surname, int age) {
         this.firstName = firstName;
