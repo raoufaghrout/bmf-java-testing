@@ -13,7 +13,7 @@ public class PeopleBuilder {
         return new PeopleBuilder();
     }
 
-    public PeopleBuilder withPersonList(List<Person> personList) {
+    public PeopleBuilder withPeople(List<Person> personList) {
         this.personList = personList;
         return this;
     }
