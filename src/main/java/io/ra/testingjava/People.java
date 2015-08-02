@@ -4,15 +4,15 @@ import java.util.List;
 
 public class People {
 
-    private List<Person> people;
+    private List<Person> persons;
 
     public People() {}
 
-    public People(List<Person> people) {
-        this.people = people;
+    public People(List<Person> persons) {
+        this.persons = persons;
     }
 
-    public List<Person> getPeople() {
-        return people;
+    public List<Person> getPersons() {
+        return persons;
     }
 }

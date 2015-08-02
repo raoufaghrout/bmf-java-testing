@@ -22,10 +22,10 @@ public class PeopleBuilderTest {
                 .withAge(AGE)
                 .build();
         People people = somePeople()
-                .withPeople(singletonList(person))
+                .withPersons(singletonList(person))
                 .build();
 
-        assertThat(people.getPeople().size(), is(1));
-        assertThat(people.getPeople().get(0), is(person));
+        assertThat(people.getPersons().size(), is(1));
+        assertThat(people.getPersons().get(0), is(person));
     }
 }

@@ -7,19 +7,19 @@ import java.util.List;
 
 public class PeopleBuilder {
 
-    private List<Person> personList;
+    private List<Person> persons;
 
     public static PeopleBuilder somePeople() {
         return new PeopleBuilder();
     }
 
-    public PeopleBuilder withPeople(List<Person> personList) {
-        this.personList = personList;
+    public PeopleBuilder withPersons(List<Person> persons) {
+        this.persons = persons;
         return this;
     }
 
 
     public People build() {
-        return new People(personList);
+        return new People(persons);
     }
 }

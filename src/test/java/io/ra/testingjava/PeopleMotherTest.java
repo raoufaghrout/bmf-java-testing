@@ -21,10 +21,10 @@ public class PeopleMotherTest {
                 .with("age", AGE)
                 .build();
         People people = new Mother<>(People.class)
-                .with("people", singletonList(person))
+                .with("persons", singletonList(person))
                 .build();
 
-        assertThat(people.getPeople().size(), is(1));
-        assertThat(people.getPeople().get(0), is(person));
+        assertThat(people.getPersons().size(), is(1));
+        assertThat(people.getPersons().get(0), is(person));
     }
 }
