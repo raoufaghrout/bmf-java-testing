@@ -13,7 +13,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class PeopleBuilderFactoryTest extends BaseTest {
 
     @Test
-    public void shouldCreateDefaultPeopleWithPersonBuilderFactory() {
+    public void shouldCreateDefaultPeopleDelegatingToPersonBuilderFactory() {
         People people = somePeople();
 
         assertThat(people.getPersons().size(), is(1));
@@ -21,7 +21,7 @@ public class PeopleBuilderFactoryTest extends BaseTest {
     }
 
     @Test
-    public void shouldCreateCustomPeopleWithPersonBuilderFactory() {
+    public void shouldCreateCustomPeopleDelegatingToPersonBuilderFactory() {
         Person person = aPersonWithFirstNameSurnameAndAge(CUSTOM_FIRST_NAME, CUSTOM_SURNAME, CUSTOM_AGE);
         People people = somePeopleWithPersons(singletonList(person));
 

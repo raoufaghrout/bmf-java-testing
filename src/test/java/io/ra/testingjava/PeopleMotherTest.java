@@ -10,7 +10,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class PeopleMotherTest extends BaseTest {
 
     @Test
-    public void shouldCreatePeopleMotherWithPersonMother() {
+    public void shouldCreatePeopleDelegatingToPersonMother() {
         Person person = new Mother<>(Person.class)
                 .with("firstName", CUSTOM_FIRST_NAME)
                 .with("surname", CUSTOM_SURNAME)

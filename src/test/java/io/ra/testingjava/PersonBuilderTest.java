@@ -9,7 +9,7 @@ import static org.hamcrest.core.Is.is;
 public class PersonBuilderTest extends BaseTest {
 
     @Test
-    public void shouldCreateDefaultPersonUsingBuilder() {
+    public void shouldCreateDefaultPerson() {
         Person person = aPerson().build();
 
         assertThat(person.getFirstName(), is(DEFAULT_FIRST_NAME));
@@ -18,7 +18,7 @@ public class PersonBuilderTest extends BaseTest {
     }
 
     @Test
-    public void shouldCreateCustomPersonUsingBuilder() {
+    public void shouldCreateCustomPerson() {
         Person person = aPerson()
                 .withFirstName(CUSTOM_FIRST_NAME)
                 .withSurname(CUSTOM_SURNAME)

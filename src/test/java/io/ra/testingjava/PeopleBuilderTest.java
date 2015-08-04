@@ -11,7 +11,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class PeopleBuilderTest extends BaseTest {
 
     @Test
-    public void shouldCreateDefaultPeopleWithPersonBuilder() {
+    public void shouldCreateDefaultPeopleDelegatingToPersonBuilder() {
         People people = somePeople().build();
 
         assertThat(people.getPersons().size(), is(1));
@@ -19,7 +19,7 @@ public class PeopleBuilderTest extends BaseTest {
     }
 
     @Test
-    public void shouldCreateCustomPeopleWithPersonBuilder() {
+    public void shouldCreateCustomPeopleDelegatingToPersonBuilder() {
         Person person = aPerson()
                 .withFirstName(CUSTOM_FIRST_NAME)
                 .withSurname(CUSTOM_SURNAME)

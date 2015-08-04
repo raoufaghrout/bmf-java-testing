@@ -11,7 +11,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class PeopleMotherFactoryTest extends BaseTest {
 
     @Test
-    public void shouldCreatePeopleWithPersonMotherFactory() {
+    public void shouldCreatePeopleDelegatingToPersonMotherFactory() {
         Person person = aPersonWithFirstNameSurnameAndAge(CUSTOM_FIRST_NAME, CUSTOM_SURNAME, CUSTOM_AGE);
         People people = somePeopleWithPersons(singletonList(person));
 

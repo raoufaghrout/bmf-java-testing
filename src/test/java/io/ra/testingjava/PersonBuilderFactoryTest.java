@@ -10,7 +10,7 @@ import static org.hamcrest.core.Is.is;
 public class PersonBuilderFactoryTest extends BaseTest {
 
     @Test
-    public void shouldCreateDefaultPersonUsingBuilderFactory() {
+    public void shouldCreateDefaultPerson() {
         Person person = aPerson();
 
         assertThat(person.getFirstName(), is(DEFAULT_FIRST_NAME));
@@ -19,7 +19,7 @@ public class PersonBuilderFactoryTest extends BaseTest {
     }
 
     @Test
-    public void shouldCreateCustomPersonUsingBuilderFactory() {
+    public void shouldCreateCustomPerson() {
         Person person = aPersonWithFirstNameSurnameAndAge(CUSTOM_FIRST_NAME, CUSTOM_SURNAME, CUSTOM_AGE);
 
         assertThat(person.getFirstName(), is(CUSTOM_FIRST_NAME));

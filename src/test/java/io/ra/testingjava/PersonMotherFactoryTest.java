@@ -9,7 +9,7 @@ import static org.hamcrest.core.Is.is;
 public class PersonMotherFactoryTest extends BaseTest {
 
     @Test
-    public void shouldCreatePersonUsingMotherFactory() {
+    public void shouldCreatePersonUsing() {
         Person person = aPersonWithFirstNameSurnameAndAge(CUSTOM_FIRST_NAME, CUSTOM_SURNAME, CUSTOM_AGE);
 
         assertThat(person.getFirstName(), is(CUSTOM_FIRST_NAME));

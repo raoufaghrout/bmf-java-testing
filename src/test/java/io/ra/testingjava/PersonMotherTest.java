@@ -9,7 +9,7 @@ import static org.hamcrest.core.Is.is;
 public class PersonMotherTest extends BaseTest {
 
     @Test
-    public void shouldCreatePersonUsingMother() {
+    public void shouldCreateCustomPerson() {
         Person person = new Mother<>(Person.class)
                 .with("firstName", CUSTOM_FIRST_NAME)
                 .with("surname", CUSTOM_SURNAME)
