@@ -10,10 +10,10 @@ public class PersonBuilderFactoryTest extends BaseTest {
 
     @Test
     public void shouldCreatePersonUsingBuilderFactory() {
-        Person person = aPersonWithFirstNameSurnameAndAge(FIRST_NAME, SURNAME, AGE);
+        Person person = aPersonWithFirstNameSurnameAndAge(CUSTOM_FIRST_NAME, CUSTOM_SURNAME, CUSTOM_AGE);
 
-        assertThat(person.getFirstName(), is(FIRST_NAME));
-        assertThat(person.getSurname(), is(SURNAME));
-        assertThat(person.getAge(), is(AGE));
+        assertThat(person.getFirstName(), is(CUSTOM_FIRST_NAME));
+        assertThat(person.getSurname(), is(CUSTOM_SURNAME));
+        assertThat(person.getAge(), is(CUSTOM_AGE));
     }
 }

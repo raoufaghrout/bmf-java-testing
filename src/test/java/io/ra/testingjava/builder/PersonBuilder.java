@@ -4,9 +4,9 @@ import io.ra.testingjava.Person;
 
 public class PersonBuilder {
 
-    private String firstName;
-    private String surname;
-    private int age;
+    private String firstName = "Alice";
+    private String surname = "Jones";
+    private int age = 25;
 
     public static PersonBuilder aPerson() {
         return new PersonBuilder();

@@ -11,13 +11,13 @@ public class PersonMotherTest extends BaseTest {
     @Test
     public void shouldCreatePersonUsingMother() {
         Person person = new Mother<>(Person.class)
-                .with("firstName", FIRST_NAME)
-                .with("surname", SURNAME)
-                .with("age", AGE)
+§                .with("firstName", CUSTOM_FIRST_NAME)
+                .with("surname", CUSTOM_SURNAME)
+                .with("age", CUSTOM_AGE)
                 .build();
 
-        assertThat(person.getFirstName(), is(FIRST_NAME));
-        assertThat(person.getSurname(), is(SURNAME));
-        assertThat(person.getAge(), is(AGE));
+        assertThat(person.getFirstName(), is(CUSTOM_FIRST_NAME));
+        assertThat(person.getSurname(), is(CUSTOM_SURNAME));
+        assertThat(person.getAge(), is(CUSTOM_AGE));
     }
 }

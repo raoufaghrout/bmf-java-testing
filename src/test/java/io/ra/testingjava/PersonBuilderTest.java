@@ -9,15 +9,24 @@ import static org.hamcrest.core.Is.is;
 public class PersonBuilderTest extends BaseTest {
 
     @Test
-    public void shouldCreatePersonUsingBuilder() {
+    public void shouldCreateDefaultPersonUsingBuilder() {
+        Person person = aPerson().build();
+
+        assertThat(person.getFirstName(), is(DEFAULT_FIRST_NAME));
+        assertThat(person.getSurname(), is(DEFAULT_SURNAME));
+        assertThat(person.getAge(), is(DEFAULT_AGE));
+    }
+
+    @Test
+    public void shouldCreateCustomPersonUsingBuilder() {
         Person person = aPerson()
-                .withFirstName(FIRST_NAME)
-                .withSurname(SURNAME)
-                .withAge(AGE)
+                .withFirstName(CUSTOM_FIRST_NAME)
+                .withSurname(CUSTOM_SURNAME)
+                .withAge(CUSTOM_AGE)
                 .build();
 
-        assertThat(person.getFirstName(), is(FIRST_NAME));
-        assertThat(person.getSurname(), is(SURNAME));
-        assertThat(person.getAge(), is(AGE));
+        assertThat(person.getFirstName(), is(CUSTOM_FIRST_NAME));
+        assertThat(person.getSurname(), is(CUSTOM_SURNAME));
+        assertThat(person.getAge(), is(CUSTOM_AGE));
     }
 }

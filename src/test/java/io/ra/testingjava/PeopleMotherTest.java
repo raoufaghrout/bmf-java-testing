@@ -12,9 +12,9 @@ public class PeopleMotherTest extends BaseTest {
     @Test
     public void shouldCreatePeopleMotherWithPersonMother() {
         Person person = new Mother<>(Person.class)
-                .with("firstName", FIRST_NAME)
-                .with("surname", SURNAME)
-                .with("age", AGE)
+                .with("firstName", CUSTOM_FIRST_NAME)
+                .with("surname", CUSTOM_SURNAME)
+                .with("age", CUSTOM_AGE)
                 .build();
         People people = new Mother<>(People.class)
                 .with("persons", singletonList(person))

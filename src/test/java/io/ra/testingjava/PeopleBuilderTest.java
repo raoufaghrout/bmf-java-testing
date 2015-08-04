@@ -11,11 +11,19 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class PeopleBuilderTest extends BaseTest {
 
     @Test
-    public void shouldCreatePeopleWithPersonBuilder() {
+    public void shouldCreateDefaultPeopleWithPersonBuilder() {
+        People people = somePeople().build();
+
+        assertThat(people.getPersons().size(), is(1));
+        assertThat(people.getPersons().get(0), is(aPerson().build()));
+    }
+
+    @Test
+    public void shouldCreateCustomPeopleWithPersonBuilder() {
         Person person = aPerson()
-                .withFirstName(FIRST_NAME)
-                .withSurname(SURNAME)
-                .withAge(AGE)
+                .withFirstName(CUSTOM_FIRST_NAME)
+                .withSurname(CUSTOM_SURNAME)
+                .withAge(CUSTOM_AGE)
                 .build();
         People people = somePeople()
                 .withPersons(singletonList(person))

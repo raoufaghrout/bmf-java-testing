@@ -5,9 +5,12 @@ import io.ra.testingjava.Person;
 
 import java.util.List;
 
+import static io.ra.testingjava.builder.PersonBuilder.aPerson;
+import static java.util.Collections.singletonList;
+
 public class PeopleBuilder {
 
-    private List<Person> persons;
+    private List<Person> persons = singletonList(aPerson().build());
 
     public static PeopleBuilder somePeople() {
         return new PeopleBuilder();
@@ -17,7 +20,6 @@ public class PeopleBuilder {
         this.persons = persons;
         return this;
     }
-
 
     public People build() {
         return new People(persons);

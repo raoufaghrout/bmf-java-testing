@@ -12,7 +12,7 @@ public class PeopleBuilderFactoryTest extends BaseTest {
 
     @Test
     public void shouldCreatePeopleWithPersonBuilderFactory() {
-        Person person = aPersonWithFirstNameSurnameAndAge(FIRST_NAME, SURNAME, AGE);
+        Person person = aPersonWithFirstNameSurnameAndAge(CUSTOM_FIRST_NAME, CUSTOM_SURNAME, CUSTOM_AGE);
         People people = somePeopleWithPersons(singletonList(person));
 
         assertThat(people.getPersons().size(), is(1));
