@@ -6,11 +6,7 @@ import org.junit.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
-public class PersonMotherTest {
-
-    private static final String FIRST_NAME = "John";
-    private static final String SURNAME = "Smith";
-    private static final int AGE = 35;
+public class PersonMotherTest extends BaseTest {
 
     @Test
     public void shouldCreatePersonUsingMother() {

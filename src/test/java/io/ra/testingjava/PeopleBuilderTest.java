@@ -8,11 +8,7 @@ import static java.util.Collections.singletonList;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class PeopleBuilderTest {
-
-    private static final String FIRST_NAME = "John";
-    private static final String SURNAME = "Smith";
-    private static final int AGE = 35;
+public class PeopleBuilderTest extends BaseTest {
 
     @Test
     public void shouldCreatePeopleWithPersonBuilder() {

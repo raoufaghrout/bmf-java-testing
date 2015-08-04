@@ -6,11 +6,7 @@ import static io.ra.testingjava.builder.PersonBuilder.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
-public class PersonBuilderTest {
-
-    private static final String FIRST_NAME = "John";
-    private static final String SURNAME = "Smith";
-    private static final int AGE = 35;
+public class PersonBuilderTest extends BaseTest {
 
     @Test
     public void shouldCreatePersonUsingBuilder() {

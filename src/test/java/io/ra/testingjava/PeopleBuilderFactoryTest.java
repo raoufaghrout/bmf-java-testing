@@ -7,11 +7,7 @@ import static io.ra.testingjava.factory.PersonBuilderFactory.aPersonWithFirstNam
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class PeopleBuilderFactoryTest {
-
-    private static final String FIRST_NAME = "John";
-    private static final String SURNAME = "Smith";
-    private static final int AGE = 35;
+public class PeopleBuilderFactoryTest extends BaseTest {
 
     @Test
     public void shouldCreatePeopleWithPersonBuilderFactory() {
