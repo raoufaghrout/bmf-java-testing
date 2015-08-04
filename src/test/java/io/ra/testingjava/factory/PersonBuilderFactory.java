@@ -5,6 +5,10 @@ import io.ra.testingjava.builder.PersonBuilder;
 
 public class PersonBuilderFactory {
 
+    public static Person aPerson() {
+        return PersonBuilder.aPerson()
+                .build();
+    }
 
     public static Person aPersonWithFirstNameSurnameAndAge(String firstName, String surname, int age) {
         return PersonBuilder.aPerson()

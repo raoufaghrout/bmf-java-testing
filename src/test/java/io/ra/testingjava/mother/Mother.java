@@ -15,6 +15,11 @@ public class Mother<T> {
         this.tClass = tClass;
     }
 
+    public Mother<T> with(String propertyName, Object value) {
+        objectMap.put(propertyName, value);
+        return this;
+    }
+
     public static <E> E updateField(E targetObject, String fieldName, Object value) {
         try {
             getDeclaredField(targetObject.getClass(), fieldName, true).set(targetObject, value);
@@ -23,11 +28,6 @@ public class Mother<T> {
         }
 
         return targetObject;
-    }
-
-    public Mother<T> with(String propertyName, Object value) {
-        objectMap.put(propertyName, value);
-        return this;
     }
 
     public T build() {

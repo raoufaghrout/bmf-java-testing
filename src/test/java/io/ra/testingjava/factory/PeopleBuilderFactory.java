@@ -2,15 +2,19 @@ package io.ra.testingjava.factory;
 
 import io.ra.testingjava.People;
 import io.ra.testingjava.Person;
+import io.ra.testingjava.builder.PeopleBuilder;
 
 import java.util.List;
 
-import static io.ra.testingjava.builder.PeopleBuilder.somePeople;
-
 public class PeopleBuilderFactory {
 
+    public static People somePeople() {
+        return PeopleBuilder.somePeople()
+                .build();
+    }
+
     public static People somePeopleWithPersons(List<Person> person) {
-        return somePeople()
+        return PeopleBuilder.somePeople()
                 .withPersons(person)
                 .build();
     }

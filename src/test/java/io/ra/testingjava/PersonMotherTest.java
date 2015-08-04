@@ -11,7 +11,7 @@ public class PersonMotherTest extends BaseTest {
     @Test
     public void shouldCreatePersonUsingMother() {
         Person person = new Mother<>(Person.class)
-§                .with("firstName", CUSTOM_FIRST_NAME)
+                .with("firstName", CUSTOM_FIRST_NAME)
                 .with("surname", CUSTOM_SURNAME)
                 .with("age", CUSTOM_AGE)
                 .build();
