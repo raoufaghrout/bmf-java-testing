@@ -2,16 +2,16 @@ package io.ra.testingjava;
 
 import org.junit.Test;
 
-import static io.ra.testingjava.factory.PeopleBuilderFactory.somePeopleWithPersons;
-import static io.ra.testingjava.factory.PersonBuilderFactory.aPersonWithFirstNameSurnameAndAge;
+import static io.ra.testingjava.factory.PeopleMotherFactory.somePeopleWithPersons;
+import static io.ra.testingjava.factory.PersonMotherFactory.aPersonWithFirstNameSurnameAndAge;
 import static java.util.Collections.singletonList;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class PeopleBuilderFactoryTest extends BaseTest {
+public class PeopleMotherFactoryTest extends BaseTest {
 
     @Test
-    public void shouldCreatePeopleWithPersonBuilderFactory() {
+    public void shouldCreatePeopleWithPersonMotherFactory() {
         Person person = aPersonWithFirstNameSurnameAndAge(FIRST_NAME, SURNAME, AGE);
         People people = somePeopleWithPersons(singletonList(person));
 
